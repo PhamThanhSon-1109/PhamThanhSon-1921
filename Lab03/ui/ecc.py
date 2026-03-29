@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ecc.ui'
+# Form implementation generated from reading ui file './ui/ecc.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -62,3 +62,13 @@ class Ui_MainWindow(object):
         self.btn_gen_keys.setText(_translate("MainWindow", "generate keys"))
         self.label_2.setText(_translate("MainWindow", "information"))
         self.label_3.setText(_translate("MainWindow", "signature"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
